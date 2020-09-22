@@ -41,7 +41,7 @@ func PathExists(path string) (bool, error) {
 
 func main() {
 	flag.Parse()
-	projectGroup = fmt.Sprintf(strings.Split(podId,"-")[0]) // podId: "opu-appserver"
+	projectGroup = fmt.Sprintf(strings.Split(podId,"-")[0]) // podId: "ops-demo"
 	bucketName = fmt.Sprintf("%s-disaster",projectGroup) //正式的bucketName，如ops-disaster
 	// 判断dump文件是否存在
 	exist, err := PathExists(locaFilename)
